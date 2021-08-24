@@ -106,16 +106,17 @@ function addDataHandler(req,res){
 
 function deleteDataHandler(req,res){
     const {idx}=req.params;
+    const {userEmail}=req.query;
     ownerModel.findOne({userEmail:userEmail},(err,result)=>{
         if (err) console.log(err);
         else{
-           result.flowers.splice(1,idx).then(
+           result.flowers.splice(idx,1);
                result.save().then(()=>{
                    ownerModel.findOne({userEmail:userEmail},(err,result)=>{
                        res.send(result.flowers);
                    })
                })
-           )
+           
         }
     })
 }
