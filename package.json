@@ -6,5 +6,24 @@
     "express": "^4.17.1",
     "mongoose": "^5.13.8",
     "nodemon": "^2.0.12"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "backend-exam",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahafJ96/backend-exam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahafJ96/backend-exam/issues"
+  },
+  "homepage": "https://github.com/RahafJ96/backend-exam#readme"
 }
